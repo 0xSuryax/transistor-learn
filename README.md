@@ -1,6 +1,6 @@
 # Transistor Learn
 
-![Transistor Learn](https://github.com/0xSuryax/transistor-learn/screenshots/1.png)
+![Transistor Learn](https://github.com/0xSuryax/transistor-learn/blob/main/screenshots/1.png)
 
 ## Overview
 
@@ -64,10 +64,10 @@ Transistor Learn helps users understand:
 
 ## Screenshots
 
-![Main Interface](https://github.com/0xSuryax/transistor-learn/screenshots/2.png)
+![Main Interface](https://github.com/0xSuryax/transistor-learn/blob/main/screenshots/2.png)
 *The main interface showing the binary-to-decimal conversion*
 
-![Transistors View](https://github.com/0xSuryax/transistor-learn/screenshots/3.png)
+![Transistors View](https://github.com/0xSuryax/transistor-learn/blob/main/screenshots/3.png)
 *Close-up of the interactive transistors*
 
 ## Project Structure
