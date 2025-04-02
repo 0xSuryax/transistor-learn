@@ -1,0 +1,67 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .control-button {
+    position: relative;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .control-button span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .button-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .control-button.add .button-glow {
+    background: linear-gradient(45deg, #007755, var(--neon-cyan));
+    box-shadow: 0 0 10px 2px rgba(0, 255, 187, 0.5);
+  }
+  
+  .control-button.remove .button-glow {
+    background: linear-gradient(45deg, #aa1133, var(--neon-pink));
+    box-shadow: 0 0 10px 2px rgba(255, 51, 102, 0.5);
+  }
+  
+  .control-button.reset .button-glow {
+    background: linear-gradient(45deg, #8844ff, #bb44ff);
+    box-shadow: 0 0 10px 2px rgba(136, 68, 255, 0.5);
+  }
+  
+  .control-button:hover .button-glow {
+    filter: brightness(1.2);
+  }
+  
+  .control-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .control-button:disabled .button-glow {
+    background: #555;
+    box-shadow: none;
+  }

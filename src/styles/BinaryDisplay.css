@@ -1,0 +1,79 @@
+.binary-display {
+    flex: 1;
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .binary-display h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .binary-value-container {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bit-digit {
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+  }
+  
+  .bit-digit.on {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px rgba(0, 255, 187, 0.8), 0 0 20px rgba(0, 255, 187, 0.5);
+  }
+  
+  .bit-digit.off {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px rgba(255, 51, 102, 0.8), 0 0 20px rgba(255, 51, 102, 0.5);
+  }
+  
+  .binary-display::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(0, 255, 187, 0.05) 50%, transparent 100%);
+    pointer-events: none;
+  }
+  
+
+  @media (max-width: 768px) {
+    .binary-value-container {
+      font-size: 1.8rem;
+      letter-spacing: 0.5rem;
+    }
+    
+    .bit-digit {
+      width: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .binary-value-container {
+      font-size: 1.4rem;
+      letter-spacing: 0.3rem;
+    }
+    
+    .bit-digit {
+      width: 1.2rem;
+    }
+  }
+  
